@@ -39,7 +39,7 @@ jobs:
              echo "uri=${{ vars.URI_ECR_PAYMENTS_DEV }}" >> $GITHUB_ENV
           fi
 
-      # Construcción de la imagen Docker
+      # Construcción de la imagen Docker 
       - name: Build Docker Image
         run: docker build -t payments-service:latest .
 
